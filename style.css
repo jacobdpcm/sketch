@@ -1,1 +1,22 @@
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+    overflow-y: auto;
+}
 
+.grid{
+    width: 720px;
+    height: 720px;
+    border: 5px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 43px;
+    height: 43px;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+}
