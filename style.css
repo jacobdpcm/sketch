@@ -4,6 +4,9 @@ body {
     overflow: hidden;
     font-family: Roboto, sans-serif;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grid{
@@ -15,8 +18,11 @@ body {
 }
 
 .square{
-    width: 43px;
-    height: 43px;
-    border: 1px solid;
+   
+    border: .5px solid;
     color: rgb(0, 0, 0);
+}
+
+.change{
+    background-color: aquamarine;
 }
