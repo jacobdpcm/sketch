@@ -22,7 +22,7 @@ function colorChange(node){
     node.classList.add('change');
 }
 
-let rowSquares = prompt('Set the number of squares in a row:');
+let rowSquares = 16
 let squares = gridCreate(rowSquares);
 let enableDrawing = false;
 console.log(squares);

@@ -9,6 +9,20 @@ body {
     align-items: center;
 }
 
+.settings{
+    display: flex;
+    margin: 20px;
+}
+
+.clear {
+    margin-right: 40px;
+}
+
+.createSettings{
+    display: flex;
+    gap: 10px;
+}
+
 .grid{
     width: 720px;
     height: 720px;
