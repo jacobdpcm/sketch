@@ -1,16 +1,20 @@
 //Create a grid with specific dimensions 
 function gridCreate(rowSquares){
-    totalSquares = Math.pow(rowSquares, 2);
-    const grid = document.querySelector('.grid');
     
-    for(let i = 0; i < totalSquares; i++){
-        const newSquare = document.createElement('div');
-        newSquare.classList.add('square');
-        newSquare.style.width = (720/rowSquares - 1) + 'px';
-        newSquare.style.height = (720/rowSquares - 1) + 'px';
-        grid.appendChild(newSquare);
-    }
+    const grid = document.querySelector('.grid');
+    for(let i = 0; i < rowSquares; i++){
+        const newColumn = document.createElement('div');
+        newColumn.classList.add('column');
+        grid.appendChild(newColumn);
 
+        for(let j = 0; j < rowSquares; j++){
+            const newSquare = document.createElement('div');
+            newSquare.classList.add('square');
+            
+            
+            newColumn.appendChild(newSquare);
+        }
+    }
     return document.querySelectorAll('.square');
 }
 
